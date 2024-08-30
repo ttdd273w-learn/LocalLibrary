@@ -1,7 +1,12 @@
 extends layout
 
+//- In Pug (formerly known as Jade), #[] is a shorthand syntax for defining HTML attributes. The # symbol represents an id attribute, while the [] brackets allow you to specify a dynamic value for the id.
+
+//- Here's an example: div#user-[userId]
+
 block content
   h1= title
+  //- this creates an em element with id of LocalLibrary
   p Welcome to #[em LocalLibrary], a very basic Express website developed as a tutorial example on the Mozilla Developer Network.
 
   h1 Dynamic content
